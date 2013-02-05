@@ -1,6 +1,6 @@
 From: L. David Baron <dbaron@dbaron.org>
 
-[css3-transforms] Fix Applies to lines so that the preprocessor can generate the propdef table correctly.
+[css3-transforms] Fix Applies to lines to avoid &nbsp; so that the (updated) preprocessor can generate the propdef table correctly.
 
 diff --git a/css3-transforms/Overview.html b/css3-transforms/Overview.html
 --- a/css3-transforms/Overview.html
