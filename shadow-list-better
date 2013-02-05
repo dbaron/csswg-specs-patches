@@ -19,7 +19,7 @@ diff --git a/css3-transitions/Overview.html b/css3-transitions/Overview.html
 -    numbers where appropriate). In the case where there are lists of shadows,
 -    the shorter list is padded at the end with shadows whose color is
 -    transparent and all lengths (x, y, blur) are 0.
-+   <li id=animtype-shadow-list> <strong>shadow list</strong>: each shadow in
++   <li id=animtype-shadow-list> <strong>shadow list</strong>: Each shadow in
 +    the list is interpolated via the color (as <a
 +    href="#animtype-color">color</a>) component, and x, y, blur, and (when
 +    appropriate) spread (as <a href="#animtype-length">length</a>)
@@ -56,7 +56,7 @@ diff --git a/css3-transitions/Overview.src.html b/css3-transitions/Overview.src.
 -          appropriate). In the case where there are lists of shadows,
 -          the shorter list is padded at the end with shadows whose
 -          color is transparent and all lengths (x, y, blur) are 0.
-+          <strong>shadow list</strong>: each shadow in the list is
++          <strong>shadow list</strong>: Each shadow in the list is
 +          interpolated via the
 +          color (as <a href="#animtype-color">color</a>) component,
 +          and x, y, blur, and (when appropriate) spread
