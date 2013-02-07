@@ -3,7 +3,8 @@ From: L. David Baron <dbaron@dbaron.org>
 [css3-conditional] Add note explaining that user preferences that effectively disable a property (e.g., high-contrast mode disabling colors) do not effect the definition of support.
 
 This addresses issue 3 in the last call disposition of comments,
-which the working group rejected with no change other than adding this note.
+which the working group rejected with no change other than adding this note
+(Tucson meeting, 2013-02-06 10:30:18 -0700).
 
 The issue was raised in:
 http://lists.w3.org/Archives/Public/www-style/2013Jan/0070.html
