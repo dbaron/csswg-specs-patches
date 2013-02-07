@@ -3,7 +3,7 @@ From: L. David Baron <dbaron@dbaron.org>
 [css3-conditional] Make examples represent slighty better practices.
 
 Addresses issue raised in
-http://www.w3.org/mid/CADcYynQDimAquJ4JrzyFjenqqXZ=kXS+5SoVEY2z3K_MTDOy3g@mail.gmail.com
+http://lists.w3.org/Archives/Public/www-style/2012Dec/0224.html
 which is issue 1 in the LCWD disposition of comments.
 
 diff --git a/css3-conditional/Overview.src.html b/css3-conditional/Overview.src.html
