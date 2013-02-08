@@ -1,0 +1,87 @@
+From: L. David Baron <dbaron@dbaron.org>
+
+diff --git a/css3-transitions/Makefile b/css3-transitions/Makefile
+--- a/css3-transitions/Makefile
++++ b/css3-transitions/Makefile
+@@ -7,16 +7,17 @@
+ # http://www.w3.org/TR/[YEAR]/CR-[SHORTNAME]-[CDATE]/
+ # Or set that URL to [VERSION] and call Make as: make status=CR
+ #
+ #
+ # Possible other options to add to the curl command below:
+ # -F ids=on
+ 
+ cdate = $(shell date +%Y%m%d)
++status = ED
+ 
+ %.html: %.src.html
+ 	@echo "Calling post-processor to generate $@..."
+ 	@curl -F file=@$< -F group=CSS -F output=html -F method=file -s \
+ 	-F date=$(cdate) -F status=$(status) \
+ 	-K ~/.curl-w3.org https://www.w3.org/Style/Group/process.cgi >$@
+ %.err: %.src.html
+ 	@echo "Calling post-processor to check $<..."
+diff --git a/css3-transitions/Overview.html b/css3-transitions/Overview.html
+--- a/css3-transitions/Overview.html
++++ b/css3-transitions/Overview.html
+@@ -39,19 +39,18 @@
+    <h1>CSS Transitions</h1>
+ 
+    <h2 class="no-num no-toc" id=longstatus-date>Editor's Draft 8 February
+     2013</h2>
+ 
+    <dl>
+     <dt>This version:
+ 
+-    <dd> <a href="http://www.w3.org/TR/2013/ED-css3-transitions-20130208/">
+-     http://dev.w3.org/csswg/css3-transitions/</a>
+-     <!--http://www.w3.org/TR/2013/WD-css3-transitions-20130208/-->
++    <dd> <a
++     href="http://www.w3.org/TR/2013/ED-css3-transitions-20130208/">http://www.w3.org/TR/2013/ED-css3-transitions-20130208/</a>
+ 
+     <dt>Latest version:
+ 
+     <dd><a href="http://www.w3.org/TR/css3-transitions/">
+      http://www.w3.org/TR/css3-transitions/</a>
+ 
+     <dt>Editor's draft:
+ 
+diff --git a/css3-transitions/Overview.src.html b/css3-transitions/Overview.src.html
+--- a/css3-transitions/Overview.src.html
++++ b/css3-transitions/Overview.src.html
+@@ -11,33 +11,31 @@
+       border-collapse: collapse;
+     }
+     table.animatable-properties td {
+       padding: 0.2em 1em;
+       border: 1px solid black;
+     }
+     div.prod { margin: 1em 2em; }
+   </style>
+-  <link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-ED.css">
++  <link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-[STATUS].css">
+ </head>
+ 
+ <body>
+ 
+ <div class="head">
+ <!--logo-->
+ 
+ <h1>CSS Transitions</h1>
+ 
+ <h2 class="no-num no-toc">[LONGSTATUS] [DATE]</h2>
+ <dl>
+   <dt>This version:
+     <dd>
+-    <a href="[VERSION]">
+-      http://dev.w3.org/csswg/css3-transitions/</a>
+-      <!--http://www.w3.org/TR/[YEAR]/WD-[SHORTNAME]-[CDATE]/-->
++    <a href="[VERSION]">[VERSION]</a>
+   <dt>Latest version:
+     <dd><a href="http://www.w3.org/TR/css3-transitions/">
+       [LATEST]</a>
+   <dt>Editor's draft:
+     <dd><a href="http://dev.w3.org/csswg/[SHORTNAME]/">http://dev.w3.org/csswg/[SHORTNAME]/</a>
+   <dt>Previous version:
+     <dd><a href="http://www.w3.org/TR/2012/WD-css3-transitions-20120403/">
+       http://www.w3.org/TR/2012/WD-css3-transitions-20120403/</a>
