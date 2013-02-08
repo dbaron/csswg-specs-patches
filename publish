@@ -12,7 +12,7 @@ diff --git a/css3-transitions/Makefile b/css3-transitions/Makefile
  # -F ids=on
  
  cdate = $(shell date +%Y%m%d)
-+cdate = 20130213
++cdate = 20130212
 +status = WD
  
  %.html: %.src.html
@@ -35,12 +35,12 @@ diff --git a/css3-transitions/Overview.html b/css3-transitions/Overview.html
    <meta content="CSS Transitions" name=dcterms.title>
    <meta content=text name=dcterms.type>
 -  <meta content=2013-02-08 name=dcterms.issued>
-+  <meta content=2013-02-13 name=dcterms.issued>
++  <meta content=2013-02-12 name=dcterms.issued>
    <meta content="http://dev.w3.org/csswg/css3-transitions/"
     name=dcterms.creator>
    <meta content=W3C name=dcterms.publisher>
 -  <meta content="http://www.w3.org/TR/2013/ED-css3-transitions-20130208/"
-+  <meta content="http://www.w3.org/TR/2013/WD-css3-transitions-20130213/"
++  <meta content="http://www.w3.org/TR/2013/WD-css3-transitions-20130212/"
     name=dcterms.identifier>
    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
    <link href="../default.css" rel=stylesheet type="text/css">
@@ -66,7 +66,7 @@ diff --git a/css3-transitions/Overview.html b/css3-transitions/Overview.html
     <h1>CSS Transitions</h1>
  
 -   <h2 class="no-num no-toc" id=longstatus-date>Editor's Draft 8 February
-+   <h2 class="no-num no-toc" id=longstatus-date>W3C Working Draft 13 February
++   <h2 class="no-num no-toc" id=longstatus-date>W3C Working Draft 12 February
      2013</h2>
  
     <dl>
@@ -76,7 +76,7 @@ diff --git a/css3-transitions/Overview.html b/css3-transitions/Overview.html
 -     http://dev.w3.org/csswg/css3-transitions/</a>
 -     <!--http://www.w3.org/TR/2013/WD-css3-transitions-20130208/-->
 +    <dd> <a
-+     href="http://www.w3.org/TR/2013/WD-css3-transitions-20130213/">http://www.w3.org/TR/2013/WD-css3-transitions-20130213/</a>
++     href="http://www.w3.org/TR/2013/WD-css3-transitions-20130212/">http://www.w3.org/TR/2013/WD-css3-transitions-20130212/</a>
  
      <dt>Latest version:
  
