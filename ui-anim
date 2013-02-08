@@ -5,10 +5,378 @@ From: L. David Baron <dbaron@dbaron.org>
 Note that the line for nav-index matches the current value, which may
 be incorrect (number vs. integer).
 
+Required manual adjustment for preprocessor (pre- and post-processing)
+to deal with New Value(s): line for 'content' property.
+
 The Animatable lines are as resolved in Tucson face-to-face at
 2013-02-04 11:40:47 -0700, and edited by me per discussion starting at
 2013-02-05 11:11:38 -0700.
 
+diff --git a/css3-ui/Overview.html b/css3-ui/Overview.html
+--- a/css3-ui/Overview.html
++++ b/css3-ui/Overview.html
+@@ -10,20 +10,20 @@
+   <title>CSS Basic User Interface Module Level 3 (CSS3 UI)</title>
+ 
+   <link href="http://purl.org/dc/terms/" rel=schema.dcterms>
+   <link href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+    rel=dcterms.rights>
+   <meta content="CSS Basic User Interface Module Level 3 (CSS3 UI)"
+    name=dcterms.title>
+   <meta content=text name=dcterms.type>
+-  <meta content=2013-02-05 name=dcterms.issued>
++  <meta content=2013-02-08 name=dcterms.issued>
+   <meta content="http://dev.w3.org/csswg/css3-ui/" name=dcterms.creator>
+   <meta content=W3C name=dcterms.publisher>
+-  <meta content="http://www.w3.org/TR/2013/ED-css3-ui-20130205/"
++  <meta content="http://www.w3.org/TR/2013/ED-css3-ui-20130208/"
+    name=dcterms.identifier>
+   <link href="../default.css" rel=stylesheet title=Default type="text/css">
+   <style type="text/css">
+ .subtoc ul,.subtoc ol { list-style-type: none }
+ ol.objectives { list-style: decimal }
+ ol.issues { list-style: decimal }
+ .html4ss { font-size:90%}
+ h1 {font-size:200%; clear:both}
+@@ -41,23 +41,23 @@ dd p:first-child { margin-top:0 }
+    type="text/css"><!-- toggle to W3C-WD for TR publication, W3C-ED for editing -->
+ 
+  <body class=h-entry>
+   <div class=head> <a href="http://www.w3.org/"><img alt=W3C height=48
+    src="http://www.w3.org/Icons/w3c_home" width=72> </a>
+    <h1 class=p-name>CSS Basic User Interface Module Level 3 (CSS3 UI)</h1>
+ 
+    <h2 class="no-num no-toc" id=longstatus-date>Editor's Draft <time
+-    class=dt-updated datetime=20130205> 5 February 2013</time></h2>
++    class=dt-updated datetime=20130208> 8 February 2013</time></h2>
+ 
+    <dl>
+     <dt>This version:</dt>
+     <!-- TR "This version". Update "WD" below as needed to CR/PR/REC -->
+-    <!-- <dd><a href="http://www.w3.org/TR/2013/WD-css3-ui-20130205/">
+-    http://www.w3.org/TR/2013/WD-css3-ui-20130205/</a>
++    <!-- <dd><a href="http://www.w3.org/TR/2013/WD-css3-ui-20130208/">
++    http://www.w3.org/TR/2013/WD-css3-ui-20130208/</a>
+   </dd> -->
+     <!-- editor's draft "This version" -->
+ 
+     <dd><a class=u-url href="http://dev.w3.org/csswg/css3-ui/">
+      http://dev.w3.org/csswg/css3-ui/</a>
+ 
+     <dt>Latest version:
+ 
+@@ -1092,16 +1092,21 @@ html|tr::repeat-index { outline: medium 
+      <td>same as CSS 2.1
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>the keyword ‘<a href="#icon"><code class=css><span class=value
+       title="">icon</span></code></a>’ if specified as such, otherwise same
+       as CSS 2.1
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <dl>
+    <dt>icon
+ 
+    <dd>The (pseudo-)element is replaced in its entirety by the resource
+     referenced by its <a class=property href="#icon">‘<code
+     class=property>icon</code>’</a> property, and treated as a replaced
+@@ -1155,16 +1160,21 @@ html|tr::repeat-index { outline: medium 
+      <th>Media:
+ 
+      <td>all
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>as specified, except with any relative URLs converted to absolute
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <dl>
+    <dt>auto
+ 
+    <dd>Use a default generic icon provided by the user agent.
+ 
+    <dt>&lt;uri&gt;
+@@ -1259,16 +1269,21 @@ object { icon:url(objicon.png); }
+      <th>Media:
+ 
+      <td>visual
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>specified value
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <dl>
+    <dt>content-box
+ 
+    <dd>This is the behavior of width and height as specified by CSS2.1. The
+     specified width and height (and respective min/max properties) apply to
+     the width and height respectively of the content box of the element. The
+@@ -1426,16 +1441,21 @@ div.split {
+      <th>Media:
+ 
+      <td>visual
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>see individual properties
++
++    <tr>
++     <th>Animatable:
++
++     <td>see individual properties
+   </table>
+ 
+   <h3 id=outline-width><span class=secno>7.2. </span><a class=property
+    href="#outline-width0">‘<code class=property>outline-width</code>’</a>
+    property</h3>
+ 
+   <table class=propdef id=propdef-outline-width>
+    <tbody>
+@@ -1476,16 +1496,22 @@ div.split {
+ 
+      <td>visual
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>absolute length; ‘<code class=css>0</code>’ if the outline style
+       is ‘<code class=property>none</code>’.
++
++    <tr>
++     <th>Animatable:
++
++     <td>as <a
++      href="http://dev.w3.org/csswg/css3-transitions/#animtype-length">length</a>
+   </table>
+ 
+   <h3 id=outline-style><span class=secno>7.3. </span><a class=property
+    href="#outline-style0">‘<code class=property>outline-style</code>’</a>
+    property</h3>
+ 
+   <table class=propdef id=propdef-outline-style>
+    <tbody>
+@@ -1525,16 +1551,21 @@ div.split {
+      <th>Media:
+ 
+      <td>visual
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>specified value
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <h3 id=outline-color><span class=secno>7.4. </span><a class=property
+    href="#outline-color0">‘<code class=property>outline-color</code>’</a>
+    property</h3>
+ 
+   <table class=propdef id=propdef-outline-color>
+    <tbody>
+@@ -1580,16 +1611,22 @@ div.split {
+ 
+      <td>The computed value for ‘<a href="#invert"><code class=css><span
+       class=value>invert</span></code></a>’ is ‘<a href="#invert"><code
+       class=css><span class=value>invert</span></code></a>’. For
+       &lt;color&gt; values, the computed value is as defined for the <a
+       href="#CSS3COLOR" rel=biblioentry>[CSS3COLOR]<!--{{!CSS3COLOR}}--></a>
+       <span class=property>‘<code class=property>color</code>’</span>
+       property.
++
++    <tr>
++     <th>Animatable:
++
++     <td>as <a
++      href="http://dev.w3.org/csswg/css3-transitions/#animtype-color">color</a>
+   </table>
+ 
+   <p>The outline created with the outline properties is drawn "over" a box,
+    i.e., the outline is always on top, and doesn't influence the position or
+    size of the box, or of any other boxes. Therefore, displaying or
+    suppressing outlines does not cause reflow.
+ 
+   <p>Outlines may be non-rectangular. For example, if the element is broken
+@@ -1751,16 +1788,22 @@ button { outline: thick solid }
+      <th>Media:
+ 
+      <td>visual
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>&lt;length&gt; value in absolute units (px or physical).
++
++    <tr>
++     <th>Animatable:
++
++     <td>as <a
++      href="http://dev.w3.org/csswg/css3-transitions/#animtype-length">length</a>
+   </table>
+ 
+   <p>If the computed value of <a class=property
+    href="#outline-offset0">‘<code
+    class=property>outline-offset</code>’</a> is anything other than 0, then
+    the outline is outset from the border edge by that amount.
+ 
+   <div class=example>
+@@ -1827,16 +1870,21 @@ button { outline: thick solid }
+      <th>Media:
+ 
+      <td>visual
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>specified value.
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <dl>
+    <dt>none
+ 
+    <dd>The UA does not present a resizing mechanism on the element, and the
+     user is given no direct manipulation mechanism to resize the element.
+ 
+@@ -1999,16 +2047,21 @@ too bad we don't have @viewport yet. oth
+      <th>Media:
+ 
+      <td>visual
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>as specified
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <p>This property specifies rendering when inline content overflows its
+    block container element ("the block") in its inline progression direction
+    that has <span class=property>‘<code
+    class=property>overflow</code>’</span> other than <span
+    class=value>‘<code class=property>visible</code>’</span>. Text can
+    overflow for example when it is prevented from wrapping (e.g. due to
+@@ -2290,16 +2343,21 @@ WON'T ELLIPSE.
+      <th>Media:
+ 
+      <td>visual, interactive
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>as specified, except with any relative URLs converted to absolute
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <p>This property specifies the type of cursor to be displayed for the
+    pointing device when over the element's border, padding, and content.
+    Values have the following meanings:
+ 
+   <h5 class="no-num no-toc" id=image-cursors>image cursors</h5>
+ 
+@@ -2569,16 +2627,22 @@ WON'T ELLIPSE.
+      <th>Media:
+ 
+      <td>interactive
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>specified value.
++
++    <tr>
++     <th>Animatable:
++
++     <td>as <a
++      href="http://dev.w3.org/csswg/css3-transitions/#animtype-number">number</a>
+   </table>
+ 
+   <dl>
+    <dt>auto
+ 
+    <dd>The element's sequential navigation order is assigned automatically by
+     the user agent.
+ 
+@@ -2686,16 +2750,21 @@ WON'T ELLIPSE.
+      <th>Media:
+ 
+      <td>interactive
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>as specified
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <dl>
+    <dt>auto
+ 
+    <dd>The user agent automatically determines which element to navigate the
+     focus to in response to directional navigational input.
+ 
+@@ -2831,16 +2900,21 @@ button#b4 {
+      <th>Media:
+ 
+      <td>interactive
+ 
+     <tr>
+      <th>Computed value:
+ 
+      <td>as specified
++
++    <tr>
++     <th>Animatable:
++
++     <td>no
+   </table>
+ 
+   <p> The ‘<a href="#ime-mode"><code class=property>ime-mode</code></a>’
+    CSS property controls the state of the input method editor for text
+    fields.
+ 
+   <dl>
+    <dt>auto
 diff --git a/css3-ui/Overview.src.html b/css3-ui/Overview.src.html
 --- a/css3-ui/Overview.src.html
 +++ b/css3-ui/Overview.src.html
