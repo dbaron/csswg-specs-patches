@@ -1,0 +1,255 @@
+From: L. David Baron <dbaron@dbaron.org>
+
+[css3-ui] Add "Animatable:" lines to propdef tables.
+
+Note that the line for nav-index matches the current value, which may
+be incorrect (number vs. integer).
+
+The Animatable lines are as resolved in Tucson face-to-face at
+2013-02-04 11:40:47 -0700, and edited by me per discussion starting at
+2013-02-05 11:11:38 -0700.
+
+diff --git a/css3-ui/Overview.src.html b/css3-ui/Overview.src.html
+--- a/css3-ui/Overview.src.html
++++ b/css3-ui/Overview.src.html
+@@ -708,16 +708,17 @@ The ::repeat-index pseudo-element takes 
+ <tr><th>New&nbsp;Value(s):</th><td title="">icon</td></tr>
+ 
+ <tr><th>Initial:</th><td>same as CSS 2.1</td></tr>
+ <tr><th>Applies to:</th><td>same as CSS 2.1</td></tr>
+ <tr><th>Inherited:</th><td>same as CSS 2.1</td></tr>
+ <tr><th>Percentages:</th><td>same as CSS 2.1</td></tr>
+ <tr><th>Media:</th><td>same as CSS 2.1</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>the keyword '<span class="value" title="">icon</span>' if specified as such, otherwise same as CSS 2.1</td></tr>
++<tr><th>Animatable:</th><td>no</td></tr>
+ </tbody></table>
+ 
+ <dl>
+ <dt>icon</dt>
+ <dd>The (pseudo-)element is replaced in its entirety by the resource referenced by its <span class="property">'icon'</span> property, and treated as a replaced element.
+ </dd>
+ </dl>
+ 
+@@ -735,16 +736,17 @@ Note: The 'icon' value is at risk.
+ <tr><th>Name:</th><td><dfn>icon</dfn></td></tr>
+ <tr><th>Value:</th><td>auto | &lt;uri&gt; [, &lt;uri&gt;]* | inherit</td></tr>
+ <tr><th>Initial:</th><td>auto</td></tr>
+ <tr><th>Applies to:</th><td>all elements</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>all</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>as specified, except with any relative URLs converted to absolute</td></tr>
++<tr><th>Animatable:</th><td>no</td></tr>
+ </tbody></table>
+ 
+ <dl>
+ <dt>auto</dt>
+ <dd>Use a default generic icon provided by the user agent.</dd>
+ <dt>&lt;uri&gt;</dt>
+ <dd>URIs (see [[!URI]], [[!RFC1738]] and [[!RFC1808]]) provide a way of identifying resources.  The &lt;uri&gt; value(s) in this property refer to one or more icons in a comma delimited list.  The user agent loads the referenced icons one by one until it finds one that it is able to render.  This permits the usage of multiple different icon formats for various platforms, and various media for that matter.</dd>
+ </dl>
+@@ -784,16 +786,17 @@ padding-box |
+ border-box | 
+ inherit</td></tr>
+ <tr><th>Initial:</th><td>content-box</td></tr>
+ <tr><th>Applies to:</th><td>all elements that accept width or height</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>visual</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>specified value</td></tr>
++<tr><th>Animatable:</th><td>no</td></tr>
+ </tbody></table>
+ 
+ <dl>
+ <dt>content-box</dt>
+ <dd>This is the behavior of width and height as specified by CSS2.1. 
+ The specified width and height (and respective min/max properties) apply to the width and height respectively of the content box of the element.  The padding 
+ and border of the element are laid out and drawn outside the 
+ specified width and height.</dd>
+@@ -886,55 +889,59 @@ ways:</p>
+ inherit
+ </td></tr>
+ <tr><th>Initial:</th><td>see individual properties</td></tr>
+ <tr><th>Applies to:</th><td>all elements</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>visual</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>see individual properties</td></tr>
++<tr><th>Animatable:</th><td>see individual properties</td></tr>
+ </tbody></table>
+ 
+ <h3 id="outline-width"><span class="property">'outline-width'</span> property</h3>
+ 
+ <table class="propdef" id="propdef-outline-width"><tbody>
+ <tr><th>Name:</th><td><dfn>outline-width</dfn></td></tr>
+ <tr><th>Value:</th><td><a href="http://www.w3.org/TR/CSS21/box.html#value-def-border-width" class="noxref"><span class="value-inst-border-width">&lt;border-width&gt;</span></a> | inherit</td></tr>
+ <tr><th>Initial:</th><td>medium</td></tr>
+ <tr><th>Applies to:</th><td>all elements</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>visual</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>absolute length; '0' if the outline style is 'none'.</td></tr>
++<tr><th>Animatable:</th><td>as <a href="http://dev.w3.org/csswg/css3-transitions/#animtype-length">length</a></td></tr>
+ </tbody></table>
+ 
+ <h3 id="outline-style"><span class="property">'outline-style'</span> property</h3>
+ 
+ <table class="propdef" id="propdef-outline-style"><tbody>
+ <tr><th>Name:</th><td><dfn>outline-style</dfn></td></tr>
+ <tr><th>Value:</th><td>auto | <a href="http://www.w3.org/TR/CSS21/box.html#value-def-border-style" class="noxref"><span class="value-inst-border-style">&lt;border-style&gt;</span></a> | inherit</td></tr>
+ <tr><th>Initial:</th><td>none</td></tr>
+ <tr><th>Applies to:</th><td>all elements</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>visual</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>specified value</td></tr>
++<tr><th>Animatable:</th><td>no</td></tr>
+ </tbody></table>
+ 
+ <h3 id="outline-color"><span class="property">'outline-color'</span> property</h3>
+ 
+ <table class="propdef" id="propdef-outline-color"><tbody>
+ <tr><th>Name:</th><td><dfn>outline-color</dfn></td></tr>
+ <tr><th>Value:</th><td><a href="http://www.w3.org/TR/css3-color/#colorunits" class="noxref"><span class="value-inst-color">&lt;color&gt;</span></a> | invert | inherit</td></tr>
+ <tr><th>Initial:</th><td>invert</td></tr>
+ <tr><th>Applies to:</th><td>all elements</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>visual</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>The computed value for '<span class="value">invert</span>' is '<span class="value">invert</span>'. For &lt;color&gt; values, the computed value is as defined for the [[!CSS3COLOR]] <span class="property">'color'</span> property.</td></tr>
++<tr><th>Animatable:</th><td>as <a href="http://dev.w3.org/csswg/css3-transitions/#animtype-color">color</a></td></tr>
+ </tbody></table>
+ 
+ <p>The outline created with the outline properties is drawn "over" a
+ box, i.e., the outline is always on top, and doesn't influence the
+ position or size of the box, or of any other boxes. Therefore,
+ displaying or suppressing outlines does not cause reflow.
+ </p>
+ 
+@@ -1053,16 +1060,17 @@ However, it is possible to offset the ou
+ <tr><th>Name:</th><td><dfn>outline-offset</dfn></td></tr>
+ <tr><th>Value:</th><td>&lt;length&gt; | inherit</td></tr>
+ <tr><th>Initial:</th><td>0</td></tr>
+ <tr><th>Applies to:</th><td>all elements</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>visual</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>&lt;length&gt; value in absolute units (px or physical).</td></tr>
++<tr><th>Animatable:</th><td>as <a href="http://dev.w3.org/csswg/css3-transitions/#animtype-length">length</a></td></tr>
+ </tbody></table>
+ 
+ <p>If the computed value of <span class="property">'outline-offset'</span> is anything other than 0, then the outline is outset from the border edge by that amount.</p>
+ 
+ 
+ <div class="example"><p style="display:none">Example(s):</p>
+ <p>For example, to leave 2 pixels of space between a focus outline and the element that has the focus, or is active, the following rule can be used:
+ </p>
+@@ -1086,16 +1094,17 @@ user resizability of elements as well as
+ <tr><th>Name:</th><td><dfn>resize</dfn></td></tr>
+ <tr><th>Value: </th><td>none | both | horizontal | vertical | inherit</td></tr>
+ <tr><th>Initial:</th><td>none</td></tr>
+ <tr><th>Applies to:</th><td>elements with <span class="property">'overflow'</span> other than visible</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>visual</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>specified value.</td></tr>
++<tr><th>Animatable:</th><td>no</td></tr>
+ </tbody></table>
+ 
+ <dl>
+ <dt>none</dt>
+ <dd>The UA does not present a resizing mechanism on the element, and the user is given no direct manipulation mechanism to resize the element.</dd>
+ <dt>both</dt>
+ <dd>The UA presents a bidirectional resizing mechanism to 
+ allow the user to adjust both the height and the width of the element.</dd>
+@@ -1181,16 +1190,18 @@ inherit
+ <tr><th>Inherited:</th>
+     <td>no</td></tr>
+ <tr><th>Percentages:</th>
+     <td>N/A</td></tr>
+ <tr><th>Media:</th>
+     <td>visual</td></tr>
+ <tr><th>Computed&nbsp;value:</th>
+     <td>as specified</td></tr>
++<tr><th>Animatable:</th>
++    <td>no</td></tr>
+ </tbody></table>
+ 
+ <p>This property specifies rendering when inline content overflows 
+ its block container element ("the block") 
+ in its inline progression direction
+ that has <span class="property">'overflow'</span> 
+ other than <span class="value">'visible'</span>. 
+ Text can overflow for example when it is prevented from wrapping 
+@@ -1453,16 +1464,17 @@ then only the end ellipsis/string should
+ <br>
+ ] ] | inherit </td></tr>
+ <tr><th>Initial:</th><td>auto</td></tr>
+ <tr><th>Applies to:</th><td>all elements</td></tr>
+ <tr><th>Inherited:</th><td>yes</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>visual, interactive</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>as specified, except with any relative URLs converted to absolute</td></tr>
++<tr><th>Animatable:</th><td>no</td></tr>
+ </tbody></table>
+ 
+ <p>This property specifies the type of cursor to be displayed for the pointing device when over the element's border, padding, and content. Values have the following meanings:
+ </p>
+ 
+ <h5 class="no-num no-toc">image cursors</h5>
+ <dl>
+ <dt>&lt;uri&gt;</dt>
+@@ -1634,16 +1646,17 @@ and simply render the '<span class="valu
+ <tr><th>Name:</th><td><dfn>nav-index</dfn></td></tr>
+ <tr><th>Value: </th><td>auto | &lt;number&gt; | inherit</td></tr>
+ <tr><th>Initial:</th><td>auto</td></tr>
+ <tr><th>Applies to:</th><td>all enabled elements</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>n/a</td></tr>
+ <tr><th>Media:</th><td>interactive</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>specified value.</td></tr>
++<tr><th>Animatable:</th><td>as <a href="http://dev.w3.org/csswg/css3-transitions/#animtype-number">number</a></td></tr>
+ </table>
+ <dl>
+ <dt>auto</dt>
+ <dd>The element's sequential navigation order is assigned automatically by the user agent.</dd>
+ <dt>&lt;number&gt;</dt>
+ <dd>The number (which is non-zero and positive) indicates the sequential 
+ navigation order for the element. '<span class="value">1</span>' means first.  Elements with the same
+ nav-index value are navigated in document order when that nav-index value is being navigated.
+@@ -1689,16 +1702,17 @@ Note: The 'nav-index' property is at ris
+ <tr><th>Name: </th><td><dfn>nav-up</dfn>, <dfn>nav-right</dfn>, <dfn>nav-down</dfn>, <dfn>nav-left</dfn></td></tr>
+ <tr><th>Value: </th><td>auto | &lt;id&gt; [ current | root | &lt;target-name&gt; ]?  | inherit</td></tr>
+ <tr><th>Initial:</th><td>auto</td></tr>
+ <tr><th>Applies to:</th><td>all enabled elements</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>interactive</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>as specified</td></tr>
++<tr><th>Animatable:</th><td>no</td></tr>
+ </tbody></table>
+ 
+ <dl>
+ <dt>auto</dt>
+ <dd>The user agent automatically determines which element to navigate the focus to in response to directional navigational input.</dd>
+ <dt>&lt;id&gt;</dt>
+ <dd><p>The &lt;id&gt; value consists of a '<code>#</code>' character followed by an identifier, similar to a fragment identifier in a URL.  It indicates the element to which the focus is navigated to in response to directional navigation input respective to the specific property.
+ </p>
+@@ -1770,16 +1784,17 @@ are at risk.
+ <tr><th>Name: </th><td><dfn>ime-mode</dfn></td></tr>
+ <tr><th>Value: </th><td>auto | normal | active | inactive | disabled | inherit</td></tr>
+ <tr><th>Initial:</th><td>auto</td></tr>
+ <tr><th>Applies to:</th><td>text fields</td></tr>
+ <tr><th>Inherited:</th><td>no</td></tr>
+ <tr><th>Percentages:</th><td>N/A</td></tr>
+ <tr><th>Media:</th><td>interactive</td></tr>
+ <tr><th>Computed&nbsp;value:</th><td>as specified</td></tr>
++<tr><th>Animatable:</th><td>no</td></tr>
+ </tbody></table>
+ 
+ <p>
+ The 'ime-mode' CSS property controls 
+ the state of the input method editor for text fields.
+ </p>
+ 
+ <dl>
