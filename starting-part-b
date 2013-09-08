@@ -1,0 +1,9 @@
+From: L. David Baron <dbaron@dbaron.org>
+
+Define that transitions do not affect style when animations are running for the same property-element pair.
+
+This implements the group's replacement for part B of the proposal in
+http://lists.w3.org/Archives/Public/www-style/2013Mar/0297.html
+as resolved in
+http://lists.w3.org/Archives/Public/www-style/2013Jun/0682.html
+

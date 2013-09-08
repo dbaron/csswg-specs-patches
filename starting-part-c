@@ -1,0 +1,9 @@
+From: L. David Baron <dbaron@dbaron.org>
+
+Add a note explaining that transitions can start on ancestors and descendants at the same time.
+
+This implements the remainder of part C of the proposal in
+http://lists.w3.org/Archives/Public/www-style/2013Mar/0297.html
+as resolved in
+http://lists.w3.org/Archives/Public/www-style/2013Jun/0682.html
+
