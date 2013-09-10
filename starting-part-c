@@ -48,6 +48,27 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
     definition of ‘<code class=property>transition-property</code>’</a>)
     in the computed value of ‘<a href="#transition-property"><code
     class=property>transition-property</code></a>’. Corresponding to this
+@@ -1731,16 +1752,20 @@ li:hover {
+     with other animations more precisely:
+     <ul>
+      <li>Define the <span>before-change style</span> and <span>after-change
+       style</span> used for the style comparison, using the new concept of a
+       <a href="#style-change-event">style change event</a>.
+ 
+      <li>Define that a CSS transition for a property does not affect computed
+       style when a CSS Animation for the same property is running.
++
++     <li>Add a note pointing out that the above definitions imply that
++      transitions can start simultaneously, from the same change, on
++      ancestors and descendants.
+     </ul>
+   </ul>
+ 
+   <p>For more details on these changes, see the version control change logs,
+    which are split in two parts because of a file renaming: <a
+    href="https://dvcs.w3.org/hg/csswg/log/tip/css-transitions/Overview.src.html">change
+    log since 2013 March 28</a>, <a
+    href="https://dvcs.w3.org/hg/csswg/log/tip/css3-transitions/Overview.src.html">change
 diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.html
 --- a/css-transitions/Overview.src.html
 +++ b/css-transitions/Overview.src.html
@@ -99,3 +120,21 @@ diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.ht
          the <span>after-change style</span>,
          implementations must
          start transitions based on the relevant item (see <a
+@@ -1671,16 +1702,17 @@ dated 12 February 2013</a>:</p>
+   <li>Make naming of event constructor dictionary parameters more consistent with DOM-Level-3-Events.
+   <li>Make the behavior of simultaneous changes of 'transition-*' properties and transitionable properties even clearer.
+   <li>Computed Value line for shorthands should say "see individual properties".
+   <li>Define initial values of event properties,  using initializers in <span>TransitionEventInit</span>.
+   <li>Define the model for starting of transitions and their interaction with other animations more precisely:
+     <ul>
+       <li>Define the <span>before-change style</span> and <span>after-change style</span> used for the style comparison, using the new concept of a <span>style change event</span>.
+       <li>Define that a CSS transition for a property does not affect computed style when a CSS Animation for the same property is running.
++      <li>Add a note pointing out that the above definitions imply that transitions can start simultaneously, from the same change, on ancestors and descendants.
+     </ul>
+ </ul>
+ 
+ <p>For more details on these changes, see the version control change logs, which are split in two parts because of a file renaming: <a href="https://dvcs.w3.org/hg/csswg/log/tip/css-transitions/Overview.src.html">change log since 2013 March 28</a>, <a href="https://dvcs.w3.org/hg/csswg/log/tip/css3-transitions/Overview.src.html">change log before 2013 March 28</a>.
+ 
+ <p>For changes in previous working drafts, see
+ <a href="http://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog">the ChangeLog</a>, and the above version control logs.</p>
+ 

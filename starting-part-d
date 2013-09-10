@@ -32,6 +32,26 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
  
    <p> If the current time is at or before the <a href="#start-time">start
     time</a> of the transition (that is, during the delay phase of the
+@@ -1756,16 +1761,19 @@ li:hover {
+       <a href="#style-change-event">style change event</a>.
+ 
+      <li>Define that a CSS transition for a property does not affect computed
+       style when a CSS Animation for the same property is running.
+ 
+      <li>Add a note pointing out that the above definitions imply that
+       transitions can start simultaneously, from the same change, on
+       ancestors and descendants.
++
++     <li>Define that CSS transitions participate in CSS's cascading and
++      inheritance model
+     </ul>
+   </ul>
+ 
+   <p>For more details on these changes, see the version control change logs,
+    which are split in two parts because of a file renaming: <a
+    href="https://dvcs.w3.org/hg/csswg/log/tip/css-transitions/Overview.src.html">change
+    log since 2013 March 28</a>, <a
+    href="https://dvcs.w3.org/hg/csswg/log/tip/css3-transitions/Overview.src.html">change
 diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.html
 --- a/css-transitions/Overview.src.html
 +++ b/css-transitions/Overview.src.html
@@ -63,3 +83,21 @@ diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.ht
        </p>
  
        <p>
+@@ -1703,16 +1714,17 @@ dated 12 February 2013</a>:</p>
+   <li>Make the behavior of simultaneous changes of 'transition-*' properties and transitionable properties even clearer.
+   <li>Computed Value line for shorthands should say "see individual properties".
+   <li>Define initial values of event properties,  using initializers in <span>TransitionEventInit</span>.
+   <li>Define the model for starting of transitions and their interaction with other animations more precisely:
+     <ul>
+       <li>Define the <span>before-change style</span> and <span>after-change style</span> used for the style comparison, using the new concept of a <span>style change event</span>.
+       <li>Define that a CSS transition for a property does not affect computed style when a CSS Animation for the same property is running.
+       <li>Add a note pointing out that the above definitions imply that transitions can start simultaneously, from the same change, on ancestors and descendants.
++      <li>Define that CSS transitions participate in CSS's cascading and inheritance model
+     </ul>
+ </ul>
+ 
+ <p>For more details on these changes, see the version control change logs, which are split in two parts because of a file renaming: <a href="https://dvcs.w3.org/hg/csswg/log/tip/css-transitions/Overview.src.html">change log since 2013 March 28</a>, <a href="https://dvcs.w3.org/hg/csswg/log/tip/css3-transitions/Overview.src.html">change log before 2013 March 28</a>.
+ 
+ <p>For changes in previous working drafts, see
+ <a href="http://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog">the ChangeLog</a>, and the above version control logs.</p>
+ 
