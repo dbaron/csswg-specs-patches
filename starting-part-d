@@ -10,38 +10,38 @@ http://lists.w3.org/Archives/Public/www-style/2013Jun/0682.html
 diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
 --- a/css-transitions/Overview.html
 +++ b/css-transitions/Overview.html
-@@ -1072,16 +1072,21 @@ li:hover {
+@@ -1068,16 +1068,21 @@ li:hover {
+   <h2 id=application><span class=secno>4. </span> Application of transitions</h2>
+ 
+   <p> When a property on an element is undergoing a transition (that is, when
+    or after the transition has started and before the <a href="#end-time">end
     time</a> of the transition) the transition adds a style to the CSS cascade
     at the level defined for CSS Transitions in <a href="#CSS3CASCADE"
-    rel=biblioentry>[CSS3CASCADE]<!--{{CSS3CASCADE}}--></a>. Implementations
-    must add this value to the cascade if and only if that property is not
-    currently undergoing a CSS Animation (<a href="#CSS3-ANIMATIONS"
-    rel=biblioentry>[CSS3-ANIMATIONS]<!--{{CSS3-ANIMATIONS}}--></a>) on the
-    same element.
+    rel=biblioentry>[CSS3CASCADE]<!--{{CSS3CASCADE}}--></a>.
  
 +  <p class=note> Note that this means that computed values resulting from CSS
 +   transitions can inherit to descendants just like any other computed
 +   values. In the normal case, this means that a transition of an inherited
 +   property applies to descendant elements just as an author would expect.
 +
+   <p> Implementations must add this value to the cascade if and only if that
+    property is not currently undergoing a CSS Animation (<a
+    href="#CSS3-ANIMATIONS"
+    rel=biblioentry>[CSS3-ANIMATIONS]<!--{{CSS3-ANIMATIONS}}--></a>) on the
+    same element.
+ 
    <p> If the current time is at or before the <a href="#start-time">start
     time</a> of the transition (that is, during the delay phase of the
-    transition), this value is a specified style that will compute to the
-    <span>before-change style</span> in the <a
-    href="#style-change-event">style change event</a> in which the transition
-    was started.
- 
-   <p> If the current time is after the <a href="#start-time">start time</a>
 diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.html
 --- a/css-transitions/Overview.src.html
 +++ b/css-transitions/Overview.src.html
-@@ -1084,16 +1084,27 @@ li:hover {
+@@ -1080,16 +1080,27 @@ li:hover {
+       <p>
+         When a property on an element is undergoing a transition
+         (that is, when or after the transition has started and before the
+         <span>end time</span> of the transition)
          the transition adds a style to the CSS cascade
          at the level defined for CSS Transitions in [[CSS3CASCADE]].
-         Implementations must add this value to the cascade
-         if and only if
-         that property is not currently
-         undergoing a CSS Animation ([[CSS3-ANIMATIONS]]) on the same element.
        </p>
  
 +      <p class="note">
@@ -56,10 +56,10 @@ diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.ht
 +      </p>
 +
        <p>
-         If the current time is at or before the
-         <span>start time</span> of the transition
-         (that is, during the delay phase of the transition),
-         this value is a specified style that will compute
-         to the <span>before-change style</span> in the
-         <span>style change event</span> in which the transition was started.
+         Implementations must add this value to the cascade
+         if and only if
+         that property is not currently
+         undergoing a CSS Animation ([[CSS3-ANIMATIONS]]) on the same element.
        </p>
+ 
+       <p>

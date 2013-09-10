@@ -117,7 +117,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
     href="#transition-duration"><code
     class=property>transition-duration</code></a>’, or ‘<a
     href="#transition-delay"><code
-@@ -1033,17 +1039,48 @@ li:hover {
+@@ -1033,17 +1039,50 @@ li:hover {
  
    <p class=issue> Issue: These rules don't define a model clearly enough to
     define the behavior in harder cases, such when transition properties are
@@ -133,9 +133,11 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
 +   or after the transition has started and before the <a href="#end-time">end
 +   time</a> of the transition) the transition adds a style to the CSS cascade
 +   at the level defined for CSS Transitions in <a href="#CSS3CASCADE"
-+   rel=biblioentry>[CSS3CASCADE]<!--{{CSS3CASCADE}}--></a>. Implementations
-+   must add this value to the cascade if and only if that property is not
-+   currently undergoing a CSS Animation (<a href="#CSS3-ANIMATIONS"
++   rel=biblioentry>[CSS3CASCADE]<!--{{CSS3CASCADE}}--></a>.
++
++  <p> Implementations must add this value to the cascade if and only if that
++   property is not currently undergoing a CSS Animation (<a
++   href="#CSS3-ANIMATIONS"
 +   rel=biblioentry>[CSS3-ANIMATIONS]<!--{{CSS3-ANIMATIONS}}--></a>) on the
 +   same element.
 +
@@ -167,7 +169,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
     element before the effect has completed. If the outgoing and incoming
     transitions are executed using their specified durations and timing
     functions, the resulting effect can be distractingly asymmetric. Instead,
-@@ -1105,17 +1142,17 @@ li:hover {
+@@ -1105,17 +1144,17 @@ li:hover {
     2010 part</a>. Also see: <a
     href="http://lists.w3.org/Archives/Public/public-fx/2012AprJun/0107.html">minutes
     2012-05-09</a> (and <a
@@ -186,7 +188,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
     allows a content developer to perform actions that synchronize with the
     completion of a transition.
  
-@@ -1220,17 +1257,17 @@ li:hover {
+@@ -1220,17 +1259,17 @@ li:hover {
       <li>Bubbles: Yes
  
       <li>Cancelable: Yes
@@ -205,7 +207,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
     interpolation has crossed. Thus the result of the interpolation is
     <i>V</i><sub>res</sub> = (1 - <i>p</i>) ⋅ <i>V</i><sub>start</sub> +
     <i>p</i> ⋅ <i>V</i><sub>end</sub>.
-@@ -1337,17 +1374,17 @@ li:hover {
+@@ -1337,17 +1376,17 @@ li:hover {
  
    <p>Future specifications may define additional types that can be animated.
  
@@ -224,7 +226,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
  
    <p>The definition of each CSS property defines when the values of that
     property can be interpolated by referring to the definitions of property
-@@ -1370,17 +1407,17 @@ li:hover {
+@@ -1370,17 +1409,17 @@ li:hover {
     <a href="http://www.w3.org/TR/CSS21/about.html#property-defs">section
     1.4.2</a>). This line should say "no" to indicate that a property cannot
     be animated or should reference an animation behavior (which may be one of
@@ -243,7 +245,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
     Color Module (<a href="#CSS3COLOR"
     rel=biblioentry>[CSS3COLOR]<!--{{CSS3COLOR}}--></a>).
  
-@@ -1611,17 +1648,17 @@ li:hover {
+@@ -1611,17 +1650,17 @@ li:hover {
       <td>as <a href="#animtype-length">length</a>
  
      <tr>
@@ -262,7 +264,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
         <tr>
           <th>Property Name</th><th>Type</th>
         </tr>
-@@ -1658,17 +1695,17 @@ li:hover {
+@@ -1658,17 +1697,17 @@ li:hover {
         <tr>
           <td>viewport-fill</td><td>as <a href="#animtype-color">color</a></td>
         </tr>
@@ -281,7 +283,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
  
    <ul>
     <li>Fixed missed substitution (<a
-@@ -1689,39 +1726,42 @@ li:hover {
+@@ -1689,39 +1728,42 @@ li:hover {
      href="#TransitionEventInit">TransitionEventInit</a>.
  
     <li>Define the model for starting of transitions and their interaction
@@ -326,7 +328,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
    <dl class=bibliography>
     <dd style="display: none"><!-- keeps the doc valid if the DL is empty -->
      <!---->
-@@ -1761,16 +1801,26 @@ li:hover {
+@@ -1761,16 +1803,26 @@ li:hover {
     <dd>Elika J. Etemad; Tab Atkins Jr. <a
      href="http://www.w3.org/TR/2012/CR-css3-images-20120417/"><cite>CSS Image
      Values and Replaced Content Module Level 3.</cite></a> 17 April 2012. W3C
@@ -353,7 +355,7 @@ diff --git a/css-transitions/Overview.html b/css-transitions/Overview.html
      href="http://www.w3.org/TR/2011/REC-css3-color-20110607">http://www.w3.org/TR/2011/REC-css3-color-20110607</a>
     </dd>
     <!---->
-@@ -1911,57 +1961,63 @@ li:hover {
+@@ -1911,57 +1963,63 @@ li:hover {
  
    <h2 class=no-num id=index>Index</h2>
    <!--begin-index-->
@@ -469,7 +471,7 @@ diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.ht
          delay, even if the 'transition-timing-function',
          'transition-duration', or 'transition-delay' property changes
          before the transition is complete.  However, if the
-@@ -1027,16 +1037,57 @@ li:hover {
+@@ -1027,16 +1037,60 @@ li:hover {
        <p class="issue">
          Issue: These rules don't define a model clearly enough to define
          the behavior in harder cases, such when transition properties
@@ -488,6 +490,9 @@ diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.ht
 +        <span>end time</span> of the transition)
 +        the transition adds a style to the CSS cascade
 +        at the level defined for CSS Transitions in [[CSS3CASCADE]].
++      </p>
++
++      <p>
 +        Implementations must add this value to the cascade
 +        if and only if
 +        that property is not currently
@@ -527,7 +532,7 @@ diff --git a/css-transitions/Overview.src.html b/css-transitions/Overview.src.ht
          interrupted and the property is reset to its original value. An
          example is a hover effect on an element, where the pointer enters and
          exits the element before the effect has completed. If the outgoing and
-@@ -1616,16 +1667,17 @@ dated 12 February 2013</a>:</p>
+@@ -1616,16 +1670,17 @@ dated 12 February 2013</a>:</p>
    <li>Fixed missed substitution (<span>TransitionEventInit</span> rather than AnimationEventInit) when copying event IDL from css3-animations.
    <li>Make naming of event constructor dictionary parameters more consistent with DOM-Level-3-Events.
    <li>Make the behavior of simultaneous changes of 'transition-*' properties and transitionable properties even clearer.
