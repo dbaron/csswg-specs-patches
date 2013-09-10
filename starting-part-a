@@ -1,6 +1,6 @@
 From: L. David Baron <dbaron@dbaron.org>
 
-Describe what the before-style and after-style are when considering whether to start a transition.
+[css-transitions] Describe what the before-style and after-style are when considering whether to start a transition.
 
 This implements part A (and the normative part of part C) of the proposal in
 http://lists.w3.org/Archives/Public/www-style/2013Mar/0297.html
