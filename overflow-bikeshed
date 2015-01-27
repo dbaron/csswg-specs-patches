@@ -298,7 +298,7 @@ diff --git a/css-overflow/Overview.src.html b/css-overflow/Overview.src.html
  <h2 id="overflow-properties">Overflow properties</h2>
  
  	<p>
- 		The ''overflow-x'' property specifies
+ 		The 'overflow-x' property specifies
 @@ -431,17 +370,17 @@ Introduction</h2>
  		(i.e., overflow from the top and bottom sides of the box) 
  	</p>
@@ -382,15 +382,15 @@ diff --git a/css-overflow/Overview.src.html b/css-overflow/Overview.src.html
  						<ol>
  							<li>
  								for horizontal writing mode [[!CSS3-WRITING-MODES]],
- 								the computed value for ''overflow-y'' is the cascaded value
--								and the computed value for ''overflow-x'' is ''hidden'', or
-+								and the computed value for ''overflow-x'' is ''overflow/hidden'', or
+ 								the computed value for 'overflow-y' is the cascaded value
+-								and the computed value for 'overflow-x' is ''hidden'', or
++								and the computed value for 'overflow-x' is ''overflow/hidden'', or
  							</li>
  							<li>
  								for vertical writing mode [[!CSS3-WRITING-MODES]],
- 								the computed value for ''overflow-x'' is the cascaded value
--								and the computed value for ''overflow-y'' is ''hidden''.
-+								and the computed value for ''overflow-y'' is ''overflow/hidden''.
+ 								the computed value for 'overflow-x' is the cascaded value
+-								and the computed value for 'overflow-y' is ''hidden''.
++								and the computed value for 'overflow-y' is ''overflow/hidden''.
  							</li>
  						</ol>
  					</li>
@@ -567,9 +567,9 @@ diff --git a/css-overflow/Overview.src.html b/css-overflow/Overview.src.html
  		whether there are fragment boxes at all is determined by
  		the computed value of overflow for the element.
  		<span class="issue">Need to reword this to refer to the
- 		appropriate choice of ''overflow-x'' or ''overflow-y'',
+ 		appropriate choice of 'overflow-x' or 'overflow-y',
  		and then point to rule about the handling of the other one
- 		of ''overflow-x'' or ''overflow-y''.</span>
+ 		of 'overflow-x' or 'overflow-y'.</span>
  	</p>
  
  	<p>
