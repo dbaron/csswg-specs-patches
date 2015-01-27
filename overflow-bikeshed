@@ -337,7 +337,7 @@ diff --git a/css-overflow/Overview.src.html b/css-overflow/Overview.src.html
  			<th>Applies to:
  			<td>block containers [[!CSS21]], flex containers [[!CSS3-FLEXBOX]], and grid containers [[!CSS3-GRID-LAYOUT]]
  		<tr>
-@@ -500,17 +439,17 @@ Introduction</h2>
+@@ -500,98 +439,98 @@ Introduction</h2>
  			<td>no
  		<tr>
  			<th>Canonical order:
@@ -356,7 +356,26 @@ diff --git a/css-overflow/Overview.src.html b/css-overflow/Overview.src.html
  		<dt><dfn>hidden</dfn>
  		<dt><dfn>scroll</dfn>
  		<dt><dfn>auto</dfn>
-@@ -535,63 +474,63 @@ Introduction</h2>
+ 		<dd>
+-			These values are collectively the <dfn>scrolling values</dfn>;
++			These values are collectively the <dfn dfn>scrolling values</dfn>;
+ 			they are defined in the section on
+ 			<a href="#scrolling-overflow">scrolling and hidden overflow</a>.
+ 		</dd>
+ 		<dt><dfn>paged-x</dfn>
+ 		<dt><dfn>paged-y</dfn>
+ 		<dt><dfn>paged-x-controls</dfn>
+ 		<dt><dfn>paged-y-controls</dfn>
+ 		<dt><dfn>fragments</dfn>
+ 		<dd>
+-			These values are collectively the <dfn>fragmenting values</dfn>;
++			These values are collectively the <dfn dfn>fragmenting values</dfn>;
+ 			they are defined in the sections on
+ 			<a href="#paginated-overflow">paginated overflow</a> and
+ 			<a href="#fragment-overflow">fragment overflow</a>.
+ 		</dd>
+ 	</dl>
+ 
  	<div id="overflow-computed-values">
  		<p>The computed values of 'overflow-x' and 'overflow-y'
  		are determined from the cascaded values [[!CSS3CASCADE]]
