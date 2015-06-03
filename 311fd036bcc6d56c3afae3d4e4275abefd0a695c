@@ -1,0 +1,84 @@
+# HG changeset patch
+# User fantasai <fantasai.cvs@inkedblade.net>
+# Date 1411621113 14400
+#      Thu Sep 25 00:58:33 2014 -0400
+# Node ID 311fd036bcc6d56c3afae3d4e4275abefd0a695c
+# Parent  00bf406922e754a26f3fdde3ea6803747d30111f
+[css-flexbox] Remove free-space-focused flex resolution algorithm, per WG resolution, in preparation for LC republication.
+
+diff --git a/default.css b/default.css
+--- a/default.css
++++ b/default.css
+@@ -65,20 +65,16 @@
+ 	p {
+ 		margin: 1em 0;
+ 	}
+ 	dd     > p:first-child,
+ 	li     > p:first-child {
+ 		margin-top: 0;
+ 	}
+ 
+-	blockquote {
+-		margin: 0.5em 4em 0.5em 2em;
+-	}
+-
+ 	ul, ol {
+ 		margin-left: 0;
+ 		padding-left: 2em;
+ 	}
+ 	li {
+ 		margin: 0.25em 2em 0.5em 0;
+ 		padding-left: 0;
+ 	}
+@@ -444,37 +440,48 @@
+ 		padding: 0.25em;
+ 		display: table;
+ 	}
+ 
+ /******************************************************************************/
+ /*                             Colored Boxes                                  */
+ /******************************************************************************/
+ 
+-	.issue, .note, .example, .why, .advisement {
++	.issue, .note, .example, .why, .advisement, blockquote {
+ 		padding: .5em;
+ 		border: .5em;
+ 		border-left-style: solid;
+ 		page-break-inside: avoid;
+ 	}
+ 	span.issue, span.note {
+ 		padding: .1em .5em .15em;
+ 		border-right-style: solid;
+ 	}
+ 
+ 	div.issue,
+ 	div.note,
+ 	div.example,
+-	details.why {
++	details.why,
++	blockquote {
+ 		margin: 1em auto;
+ 	}
+ 	.note  > p:first-child,
+-	.issue > p:first-child {
++	.issue > p:first-child,
++	blockquote > :first-child {
+ 		margin-top: 0;
+ 	}
++	blockquote > :last-child {
++		margin-bottom: 0;
++	}
++
++/** Blockquotes ***************************************************************/
++
++	blockquote {
++		border-color: silver;
++	}
+ 
+ /** Open issue ****************************************************************/
+   /* not intended for CR+ publication */
+ 
+ 	.issue {
+ 		border-color: #E05252;
+ 		background: #FBE9E9;
+ 		counter-increment: issue;

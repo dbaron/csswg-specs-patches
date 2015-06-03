@@ -1,0 +1,36 @@
+# HG changeset patch
+# User Bert Bos <bert@w3.org>
+# Date 1408625856 -7200
+#      Thu Aug 21 14:57:36 2014 +0200
+# Node ID 203e3eeac0986d9fb2cd82b63f3b5c0041b751b0
+# Parent  c4db54a1b90930e634c17b08664b311f62490130
+Removed the bottom border from links: It looked like an underline that was in the wrong location. It also interfered with user style sheets. Replaced by a normal underline. Made the underline for visited links different (dotted), because those links aren't otherwise distinguished from unvisited ones.
+
+diff --git a/default.css b/default.css
+--- a/default.css
++++ b/default.css
+@@ -299,19 +299,22 @@
+ 
+ /******************************************************************************/
+ /*                                    Links                                   */
+ /******************************************************************************/
+ 
+ /** General Hyperlinks ********************************************************/
+ 
+ 	a:link, a:visited { /* We hyperlink a lot, so make it less intrusive */
+-		border-bottom: 1px solid silver;
+ 		color: inherit;
+-		text-decoration: none;
++		text-decoration: underline;
++		text-decoration-color: silver;
++	}
++	a:visited {
++		text-decoration-style: dotted;
+ 	}
+ 	a.logo:link, a.logo:visited { /* backout above styling for W3C logo */
+ 		padding: 0;
+ 		border-style: none;
+ 	}
+ 
+ /** Self-Links ****************************************************************/
+   /* Auto-generated links from an element to its own anchor, for usability */

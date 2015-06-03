@@ -1,0 +1,65 @@
+# HG changeset patch
+# User fantasai <fantasai.cvs@inkedblade.net>
+# Date 1406754460 -3600
+#      Wed Jul 30 22:07:40 2014 +0100
+# Node ID b3c35f1ad1964c9488055f6d8b106c6e89cab2b8
+# Parent  483dfba48ee0700240b105609a7588c7d39db7ab
+Make inline notes less intrusive.
+
+diff --git a/default.css b/default.css
+--- a/default.css
++++ b/default.css
+@@ -423,17 +423,17 @@
+ /******************************************************************************/
+ 
+ 	.issue, .note, .example, .why, .advisement {
+ 		padding: .5em;
+ 		border: .5em;
+ 		border-left-style: solid;
+ 		page-break-inside: avoid;
+ 	}
+-	span.note, span.issue {
++	span.issue {
+ 		padding: .1em .5em .15em;
+ 		border-right-style: solid;
+ 	}
+ 
+ 	div.issue,
+ 	div.note,
+ 	div.example,
+ 	details.why {
+@@ -490,16 +490,34 @@
+ /** Non-normative Note ********************************************************/
+ 
+ 	.note, .why {
+ 		border-color: #52E052;
+ 		background: #E9FBE9;
+ 		overflow: auto;
+ 	}
+ 
++	span.note {
++		background: transparent;
++		border: none;
++		padding: 0;
++		color: #006100;
++	}
++	span.note:before,
++	span.note:after {
++		font-weight: bold;
++		color: #007A00;
++	}
++	span.note:before {
++		content: "\27E8  ";
++	}
++	span.note:after {
++		content: " \27E9";
++	}
++
+ /** Advisement Box ************************************************************/
+   /*  for attention-grabbing normative statements */
+ 
+ 	.advisement {
+ 		border-color: orange;
+ 		border-style: none solid;
+ 		background: #FFEECC;
+ 		text-align: center;

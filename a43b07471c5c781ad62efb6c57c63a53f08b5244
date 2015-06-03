@@ -1,0 +1,32 @@
+# HG changeset patch
+# User fantasai <fantasai.cvs@inkedblade.net>
+# Date 1419029331 28800
+#      Fri Dec 19 14:48:51 2014 -0800
+# Node ID a43b07471c5c781ad62efb6c57c63a53f08b5244
+# Parent  6d98486c622faa430dfc59b1c160868a5e96b648
+Fix error in CSS file.
+
+diff --git a/default.css b/default.css
+--- a/default.css
++++ b/default.css
+@@ -238,17 +238,19 @@
+ 	pre.idl :link, pre.idl :visited {
+ 		color:inherit;
+ 		background:transparent;
+ 	}
+ 
+ /** Inline CSS fragments ******************************************************/
+ 
+ 	.css.css, .property.property, .descriptor.descriptor {
+-		color: #005a9c; font: inherit;
++		color: #005a9c;
++		font-size: inherit;
++		font-family: inherit;
+ 	}
+ 	.css::before, .property::before, .descriptor::before {
+ 		content: "‘";
+ 	}
+ 	.css::after, .property::after, .descriptor::after {
+ 		content: "’";
+ 	}
+ 	.property, .descriptor {

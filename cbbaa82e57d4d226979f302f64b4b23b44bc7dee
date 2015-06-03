@@ -1,0 +1,29 @@
+# HG changeset patch
+# User fantasai <fantasai.cvs@inkedblade.net>
+# Date 1410179797 14400
+#      Mon Sep 08 08:36:37 2014 -0400
+# Node ID cbbaa82e57d4d226979f302f64b4b23b44bc7dee
+# Parent  a9ae99d72265c7e103ec615c1a6976d17f233584
+style sheet fixes...
+
+diff --git a/default.css b/default.css
+--- a/default.css
++++ b/default.css
+@@ -309,16 +309,17 @@
+ 	/* We hyperlink a lot, so make it less intrusive */
+ 	a:link, a:visited {
+ 		color: inherit;
+ 		text-decoration: none;
+ 		border-bottom: 1px solid silver;
+ 	}
+ 	@supports (text-decoration-color: silver) {
+ 		a:link, a:visited {
++			border-bottom: none;
+ 			text-decoration: underline;
+ 			text-decoration-color: silver;
+ 		}
+ 		a:visited {
+ 			text-decoration-style: dotted;
+ 		}
+ 	}
+ 

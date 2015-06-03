@@ -1,0 +1,32 @@
+# HG changeset patch
+# User fantasai <fantasai.cvs@inkedblade.net>
+# Date 1406205515 -3600
+#      Thu Jul 24 13:38:35 2014 +0100
+# Node ID ae52bfaf0d74457a8ea5cee160b3a87b467807da
+# Parent  f71ca6f3eeff32454866ddc2798042b061bd797f
+Remove misguided u=ins s=del equivalency.
+
+diff --git a/default.css b/default.css
+--- a/default.css
++++ b/default.css
+@@ -166,18 +166,18 @@
+ 		font-style: normal;
+ 	}
+ 	dt dfn code {
+ 		font-size: inherit;
+ 	}
+ 
+ /** Change Marking ************************************************************/
+ 
+-	s, del { color: red;  text-decoration: line-through; }
+-	u, ins { color: #080; text-decoration: underline;    }
++	del { color: red;  text-decoration: line-through; }
++	ins { color: #080; text-decoration: underline;    }
+ 
+ /** Miscellaneous improvements to inline formatting ***************************/
+ 
+ 	sup {
+ 		vertical-align: super;
+ 		font-size: 80%
+ 	}
+ 

@@ -1,0 +1,51 @@
+# HG changeset patch
+# User fantasai <fantasai.cvs@inkedblade.net>
+# Date 1420667620 28800
+#      Wed Jan 07 13:53:40 2015 -0800
+# Node ID 739347d23aae65e2b97981fb502d6993f41c1f4a
+# Parent  c487aef9ea03928cb4a65e7e3494fb6c84aa2f66
+Make annoying notice static in print media.
+
+diff --git a/default.css b/default.css
+--- a/default.css
++++ b/default.css
+@@ -570,30 +570,39 @@
+ 
+ 	details.why[open] > summary {
+ 		border-bottom: 1px silver solid;
+ 	}
+ 
+ /** Spec Obsoletion Notice ****************************************************/
+ 	/* obnoxious obsoletion notice for older/abandoned specs. */
+ 
++	details.annoying-warning {
++		display: block;
++	}
++
+ 	details.annoying-warning[open] {
+ 		background: #fdd;
+ 		color: red;
+ 		font-weight: bold;
+ 		text-align: center;
+ 		padding: .5em;
+ 		border: thick solid red;
+ 		border-radius: 1em;
++	}
++@media not print {
++	details.annoying-warning[open] {
+ 		position: fixed;
+ 		left: 1em;
+ 		right: 1em;
+ 		bottom: 1em;
+ 		z-index: 1000;
+ 	}
++}
++
+ 	details.annoying-warning:not([open]) > summary {
+ 		background: #fdd;
+ 		color: red;
+ 		font-weight: bold;
+ 		text-align: center;
+ 		padding: .5em;
+ 	}
+ 

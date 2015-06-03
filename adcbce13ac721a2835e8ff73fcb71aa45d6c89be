@@ -1,0 +1,49 @@
+# HG changeset patch
+# User Tab Atkins Jr. <jackalmage@gmail.com>
+# Date 1406064402 25200
+#      Tue Jul 22 14:26:42 2014 -0700
+# Node ID adcbce13ac721a2835e8ff73fcb71aa45d6c89be
+# Parent  210164261cb51c6092ff60578be8941081dfb0bd
+[csswg] Add comment about what pre.output actually does.
+
+diff --git a/default.css b/default.css
+--- a/default.css
++++ b/default.css
+@@ -190,16 +190,17 @@
+ 	pre, code {
+ 		font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+ 		font-size: .9em;
+ 		page-break-inside: avoid;
+ 	}
+ 	pre {
+ 		margin-top: 1em;
+ 		margin-bottom: 1em;
++		overflow: auto;
+ 	}
+ 
+ /** Example Code **************************************************************/
+ 
+ 	div.html, div.xml,
+ 	pre.html, pre.xml {
+ 		padding: 0.5em;
+ 		margin: 1em 0;
+@@ -402,16 +403,19 @@
+ 	/* DL list is indented 2em, but figure inside it is not */
+ 	dd > div.figure, dd > figure { margin-left: -2em }
+ 
+ 	pre.ascii-art {
+ 		display: table; /* shrinkwrap */
+ 		margin: 1em auto;
+ 	}
+ 
++	/* Displaying the output of text layout, particularly when
++	   line-breaking is being invoked, and thus having a
++	   visible width is good. */
+ 	pre.output {
+ 		margin: 1em;
+ 		border: solid thin silver;
+ 		padding: 0.25em;
+ 		display: table;
+ 	}
+ 
+ /******************************************************************************/
