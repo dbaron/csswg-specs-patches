@@ -9,7 +9,7 @@
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -160,17 +160,17 @@
+@@ -162,17 +162,17 @@
  
  /** Terminology Markup ********************************************************/
  	dfn   { /* Defining instance */

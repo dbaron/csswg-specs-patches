@@ -9,7 +9,7 @@ Tweak 'at risk' style in default.css to be less confusing
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -830,26 +830,26 @@
+@@ -835,26 +835,26 @@
  		 ul.toc li {text-indent: 5em hanging}
  	 The second line in case items wrap
  	*/

@@ -9,7 +9,7 @@
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -65,20 +65,16 @@
+@@ -67,20 +67,16 @@
  	p {
  		margin: 1em 0;
  	}
@@ -30,7 +30,7 @@ diff --git a/default-TR.css b/default-TR.css
  		margin: 0.25em 2em 0.5em 0;
  		padding-left: 0;
  	}
-@@ -444,37 +440,48 @@
+@@ -449,37 +445,48 @@
  		padding: 0.25em;
  		display: table;
  	}

@@ -9,7 +9,7 @@ Make annoying notice static in print media.
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -570,30 +570,39 @@
+@@ -575,30 +575,39 @@
  
  	details.why[open] > summary {
  		border-bottom: 1px silver solid;

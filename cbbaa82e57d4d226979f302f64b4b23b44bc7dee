@@ -9,8 +9,8 @@ style sheet fixes...
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -309,16 +309,17 @@
- 	/* We hyperlink a lot, so make it less intrusive */
+@@ -313,16 +313,17 @@
+ 	We hyperlink a lot, so make it less intrusive
  	a:link, a:visited {
  		color: inherit;
  		text-decoration: none;

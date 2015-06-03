@@ -9,7 +9,7 @@
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -120,16 +120,24 @@
+@@ -122,16 +122,24 @@
  	 content: '\21AA';
  	 padding: 0 0.5em 0 0;
  	 display: inline-block;

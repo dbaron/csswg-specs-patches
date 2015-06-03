@@ -9,7 +9,7 @@ Revert span.note styling change
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -433,17 +433,17 @@
+@@ -438,17 +438,17 @@
  /******************************************************************************/
  
  	.issue, .note, .example, .why, .advisement {
@@ -28,7 +28,7 @@ diff --git a/default-TR.css b/default-TR.css
  	div.note,
  	div.example,
  	details.why {
-@@ -500,34 +500,16 @@
+@@ -505,34 +505,16 @@
  /** Non-normative Note ********************************************************/
  
  	.note, .why {

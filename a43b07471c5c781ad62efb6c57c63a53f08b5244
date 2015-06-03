@@ -9,7 +9,7 @@ Fix error in CSS file.
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -238,17 +238,19 @@
+@@ -240,17 +240,19 @@
  	pre.idl :link, pre.idl :visited {
  		color:inherit;
  		background:transparent;

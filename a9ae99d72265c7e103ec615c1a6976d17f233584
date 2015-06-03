@@ -3,23 +3,23 @@
 # Date 1410178419 14400
 #      Mon Sep 08 08:13:39 2014 -0400
 # Node ID a9ae99d72265c7e103ec615c1a6976d17f233584
-# Parent  03c075597a4cc54040d3913b648023d05d358dc4
+# Parent  f4852e0a0af8f01229af80d5c51e79545b70c83c
 Make underline styling depend on support, use borders as fallback.
 
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -301,27 +301,36 @@
- 
- 
+@@ -305,27 +305,36 @@
  /******************************************************************************/
  /*                                    Links                                   */
  /******************************************************************************/
  
  /** General Hyperlinks ********************************************************/
  
--	a:link, a:visited { /* We hyperlink a lot, so make it less intrusive */
-+	/* We hyperlink a lot, so make it less intrusive */
+ /* removed to get past webmaster fondness for blue links
+ 
+-	a:link, a:visited { We hyperlink a lot, so make it less intrusive 
++	We hyperlink a lot, so make it less intrusive
 +	a:link, a:visited {
  		color: inherit;
 -		text-decoration: underline;
@@ -39,20 +39,20 @@ diff --git a/default-TR.css b/default-TR.css
 +		}
  	}
 +
- 	a.logo:link, a.logo:visited { /* backout above styling for W3C logo */
+ 	a.logo:link, a.logo:visited {  backout above styling for W3C logo 
  		padding: 0;
 -		border-style: none;
 +		border: none;
 +		text-decoration: none;
  	}
+ */
  
  /** Self-Links ****************************************************************/
    /* Auto-generated links from an element to its own anchor, for usability */
  
  	.heading, .issue, .note, .example, li, dt {
  		position: relative;
- 	}
-@@ -765,16 +774,22 @@
+@@ -770,16 +779,22 @@
  	ul.toc ul ul     { margin: 0 0 0 2em; font-style: italic; }
  	ul.toc ul ul ul  { margin: 0; }
  	ul.toc > li      { margin: 1.5em 0; }

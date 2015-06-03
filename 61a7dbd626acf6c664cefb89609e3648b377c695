@@ -3,19 +3,19 @@
 # Date 1415843811 28800
 #      Wed Nov 12 17:56:51 2014 -0800
 # Node ID 61a7dbd626acf6c664cefb89609e3648b377c695
-# Parent  53fd86e7b171894cf57fbf41e39b58b44c3a025f
+# Parent  fdfe43906d93e7efee0d45c6473b85af8817a8c6
 [csswg] Remove span[id] rule. Add a few rules for making Prism-highlighted stuff display better.
 
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -5,18 +5,16 @@
+@@ -7,18 +7,16 @@
  
  	body {
  		counter-reset: exampleno figure issue;
- 		max-width: 50em;
+ 		/* max-width: 50em; */
  		margin: 0 auto !important;
- 		line-height: 1.5;
+ 		/* line-height: 1.5; */
  	}
  
 -	span.id {float: right; font-weight: bold}
@@ -28,7 +28,7 @@ diff --git a/default-TR.css b/default-TR.css
  
  	h1, h2, h3, h4, h5, h6, dt {
  		page-break-after: avoid;
-@@ -193,16 +191,25 @@
+@@ -195,16 +193,25 @@
  		page-break-inside: avoid;
  	}
  	pre {
@@ -54,7 +54,7 @@ diff --git a/default-TR.css b/default-TR.css
  		margin: 1em 0;
  		position: relative;
  		clear: both;
-@@ -246,16 +253,19 @@
+@@ -248,16 +255,19 @@
  	}
  	.property, .descriptor {
  		/* Don't wrap property and descriptor names */

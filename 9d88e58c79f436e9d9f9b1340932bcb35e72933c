@@ -9,7 +9,7 @@ Add styles for ASCII renderings and diagrams.
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -397,16 +397,27 @@
+@@ -402,16 +402,27 @@
  	}
  	p.caption, figcaption {
  		counter-increment: figure;

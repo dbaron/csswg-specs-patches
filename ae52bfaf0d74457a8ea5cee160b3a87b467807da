@@ -9,7 +9,7 @@ Remove misguided u=ins s=del equivalency.
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -166,18 +166,18 @@
+@@ -168,18 +168,18 @@
  		font-style: normal;
  	}
  	dt dfn code {

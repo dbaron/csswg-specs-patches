@@ -9,7 +9,7 @@
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -233,16 +233,22 @@
+@@ -235,16 +235,22 @@
  		background:transparent;
  	}
  
@@ -32,7 +32,7 @@ diff --git a/default-TR.css b/default-TR.css
  	font-style: italic;
  	}
  
-@@ -257,27 +263,27 @@
+@@ -259,27 +265,27 @@
  	[data-link-type="property"]::before,
  	[data-link-type="propdesc"]::before,
  	[data-link-type="descriptor"]::before,

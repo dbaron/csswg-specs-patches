@@ -9,7 +9,7 @@
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -190,16 +190,17 @@
+@@ -192,16 +192,17 @@
  	pre, code {
  		font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
  		font-size: .9em;
@@ -27,7 +27,7 @@ diff --git a/default-TR.css b/default-TR.css
  	pre.html, pre.xml {
  		padding: 0.5em;
  		margin: 1em 0;
-@@ -402,16 +403,19 @@
+@@ -407,16 +408,19 @@
  	/* DL list is indented 2em, but figure inside it is not */
  	dd > div.figure, dd > figure { margin-left: -2em }
  

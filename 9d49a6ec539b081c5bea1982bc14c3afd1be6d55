@@ -9,7 +9,7 @@
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -163,16 +163,19 @@
+@@ -165,16 +165,19 @@
  		font-weight: bolder;
  	}
  	a > i { /* Instance of term */

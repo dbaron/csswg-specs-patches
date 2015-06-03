@@ -9,7 +9,7 @@ Make inline notes less intrusive.
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -423,17 +423,17 @@
+@@ -428,17 +428,17 @@
  /******************************************************************************/
  
  	.issue, .note, .example, .why, .advisement {
@@ -28,7 +28,7 @@ diff --git a/default-TR.css b/default-TR.css
  	div.note,
  	div.example,
  	details.why {
-@@ -490,16 +490,34 @@
+@@ -495,16 +495,34 @@
  /** Non-normative Note ********************************************************/
  
  	.note, .why {

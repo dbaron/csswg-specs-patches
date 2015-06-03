@@ -9,7 +9,7 @@ Fix default.css so that coloring of CSS works now that Tab's put the class direc
 diff --git a/default-TR.css b/default-TR.css
 --- a/default-TR.css
 +++ b/default-TR.css
-@@ -230,17 +230,17 @@
+@@ -232,17 +232,17 @@
  	}
  	pre.idl :link, pre.idl :visited {
  		color:inherit;
