@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  [css-flexbox] Remove free-space-focused flex resolution algorithm, per WG resolution, in preparation for LC republication.
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1411621113 14400
 #      Thu Sep 25 00:58:33 2014 -0400

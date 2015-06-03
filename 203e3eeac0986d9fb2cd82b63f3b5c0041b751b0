@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Removed the bottom border from links: It looked like an underline that was in the wrong location. It also interfered with user style sheets. Replaced by a normal underline. Made the underline for visited links different (dotted), because those links aren't otherwise distinguished from unvisited ones.
+
+Original change was:
 # User Bert Bos <bert@w3.org>
 # Date 1408625856 -7200
 #      Thu Aug 21 14:57:36 2014 +0200

@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  [csswg] Remove span[id] rule. Add a few rules for making Prism-highlighted stuff display better.
+
+Original change was:
 # User Tab Atkins Jr. <jackalmage@gmail.com>
 # Date 1415843811 28800
 #      Wed Nov 12 17:56:51 2014 -0800

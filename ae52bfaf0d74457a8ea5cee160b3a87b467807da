@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Remove misguided u=ins s=del equivalency.
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1406205515 -3600
 #      Thu Jul 24 13:38:35 2014 +0100

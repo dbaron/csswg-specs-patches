@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Tweak 'at risk' style in default.css to be less confusing
+
+Original change was:
 # User Simon Pieters <simonp@opera.com>
 # Date 1418728855 -3600
 #      Tue Dec 16 12:20:55 2014 +0100

@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Fix <hr> sizing
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1410709469 14400
 #      Sun Sep 14 11:44:29 2014 -0400

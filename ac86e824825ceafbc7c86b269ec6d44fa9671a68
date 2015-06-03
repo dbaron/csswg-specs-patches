@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  [csswg] Add some styling to handle MD-genned lists.
+
+Original change was:
 # User Tab Atkins Jr. <jackalmage@gmail.com>
 # Date 1405717917 25200
 #      Fri Jul 18 14:11:57 2014 -0700

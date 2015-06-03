@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Fix default.css so that coloring of CSS works now that Tab's put the class directly on the <a> elements. (Probably, this should be assigned to a nested <code>. But for now, this fixes the lack of color.)
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1408477534 25200
 #      Tue Aug 19 12:45:34 2014 -0700

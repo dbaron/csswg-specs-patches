@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  [csswg] Style code.idl.
+
+Original change was:
 # User Tab Atkins Jr. <jackalmage@gmail.com>
 # Date 1406591841 25200
 #      Mon Jul 28 16:57:21 2014 -0700

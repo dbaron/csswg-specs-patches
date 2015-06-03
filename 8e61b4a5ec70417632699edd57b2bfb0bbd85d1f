@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Tweak span.note some more.
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1408059927 25200
 #      Thu Aug 14 16:45:27 2014 -0700

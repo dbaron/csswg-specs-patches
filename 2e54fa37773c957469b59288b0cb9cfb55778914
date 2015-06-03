@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Improve table styling for tables with spans in the middle of the table.
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1430864861 25200
 #      Tue May 05 15:27:41 2015 -0700

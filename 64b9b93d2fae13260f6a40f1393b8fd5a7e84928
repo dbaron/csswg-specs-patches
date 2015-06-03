@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  [csswg] Add fancy quotes to all .css elements.
+
+Original change was:
 # User Tab Atkins Jr. <jackalmage@gmail.com>
 # Date 1407867403 25200
 #      Tue Aug 12 11:16:43 2014 -0700

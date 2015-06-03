@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Make inline notes less intrusive.
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1406754460 -3600
 #      Wed Jul 30 22:07:40 2014 +0100

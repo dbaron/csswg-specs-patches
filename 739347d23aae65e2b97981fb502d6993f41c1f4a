@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Make annoying notice static in print media.
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1420667620 28800
 #      Wed Jan 07 13:53:40 2015 -0800

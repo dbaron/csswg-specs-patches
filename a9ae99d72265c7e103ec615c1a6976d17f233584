@@ -1,4 +1,8 @@
 # HG changeset patch
+# User L. David Baron <dbaron@dbaron.org>
+Replay changes to default.css onto default-TR.css:  Make underline styling depend on support, use borders as fallback.
+
+Original change was:
 # User fantasai <fantasai.cvs@inkedblade.net>
 # Date 1410178419 14400
 #      Mon Sep 08 08:13:39 2014 -0400
