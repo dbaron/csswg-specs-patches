@@ -6,9 +6,9 @@
 # Parent  6d98486c622faa430dfc59b1c160868a5e96b648
 Fix error in CSS file.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -238,17 +238,19 @@
  	pre.idl :link, pre.idl :visited {
  		color:inherit;

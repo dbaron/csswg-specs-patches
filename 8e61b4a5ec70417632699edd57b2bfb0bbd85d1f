@@ -6,9 +6,9 @@
 # Parent  5c8488ffa80f72316a058e24b694113b77ec5712
 Tweak span.note some more.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -512,20 +512,20 @@
  		color: #006100;
  	}

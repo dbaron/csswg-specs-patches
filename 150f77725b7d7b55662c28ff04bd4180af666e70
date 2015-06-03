@@ -6,9 +6,9 @@
 # Parent  d0dfb63694ec4891dc723c55a95259afaab84770
 Fix <hr> sizing
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -44,17 +44,18 @@
  	}
  

@@ -6,9 +6,9 @@
 # Parent  6bed67a51bcea906fc883b40f4ec1f60bd3e603b
 [csswg] Style code.idl.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -160,17 +160,17 @@
  
  /** Terminology Markup ********************************************************/

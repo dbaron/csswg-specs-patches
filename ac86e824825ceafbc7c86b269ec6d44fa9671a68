@@ -6,9 +6,9 @@
 # Parent  0daa9ed2cf27fd238f2dde1a89cab35272a97ec3
 [csswg] Add some styling to handle MD-genned lists.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -120,16 +120,24 @@
  	 content: '\21AA';
  	 padding: 0 0.5em 0 0;

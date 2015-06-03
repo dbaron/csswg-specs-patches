@@ -6,9 +6,9 @@
 # Parent  c4db54a1b90930e634c17b08664b311f62490130
 Removed the bottom border from links: It looked like an underline that was in the wrong location. It also interfered with user style sheets. Replaced by a normal underline. Made the underline for visited links different (dotted), because those links aren't otherwise distinguished from unvisited ones.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -299,19 +299,22 @@
  
  /******************************************************************************/

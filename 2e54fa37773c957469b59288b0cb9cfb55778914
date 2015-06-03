@@ -6,9 +6,9 @@
 # Parent  6ac4550e54089d06f492bc7a90ffca891ce0d5bd
 Improve table styling for tables with spans in the middle of the table.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -760,24 +760,17 @@
  	.data.define td:last-child {
  		text-align: left;

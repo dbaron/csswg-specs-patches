@@ -6,9 +6,9 @@
 # Parent  16c858dfa1dd9179e6cfa94e52cc956c527000c0
 Add styles for ASCII renderings and diagrams.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -397,16 +397,27 @@
  	}
  	p.caption, figcaption {

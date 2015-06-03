@@ -6,9 +6,9 @@
 # Parent  4a063318b9db2892742f781c14942e41ee6de591
 Revert span.note styling change
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -433,17 +433,17 @@
  /******************************************************************************/
  

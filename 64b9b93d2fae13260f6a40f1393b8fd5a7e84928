@@ -6,9 +6,9 @@
 # Parent  ffc536f41892cc96b2d098730384ae640c3fabc5
 [csswg] Add fancy quotes to all .css elements.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -233,16 +233,22 @@
  		background:transparent;
  	}

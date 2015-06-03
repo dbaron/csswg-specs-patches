@@ -6,9 +6,9 @@
 # Parent  8efca96b863f56acfc0754d8c79ab2ffc386cf22
 Prevent biblio links from breaking across lines.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -287,16 +287,20 @@
  	.prod [data-link-type]::after {
  		content: "";

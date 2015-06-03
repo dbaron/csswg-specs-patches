@@ -6,9 +6,9 @@
 # Parent  f71ca6f3eeff32454866ddc2798042b061bd797f
 Remove misguided u=ins s=del equivalency.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -166,18 +166,18 @@
  		font-style: normal;
  	}

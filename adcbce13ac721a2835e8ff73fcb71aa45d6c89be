@@ -6,9 +6,9 @@
 # Parent  210164261cb51c6092ff60578be8941081dfb0bd
 [csswg] Add comment about what pre.output actually does.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -190,16 +190,17 @@
  	pre, code {
  		font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;

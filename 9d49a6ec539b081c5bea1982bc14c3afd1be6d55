@@ -6,9 +6,9 @@
 # Parent  6caf6c6f18f9ec3564dca0028567e556576fe6cd
 [csswg] Unitalicize var in dfn, to maintain the stylistic offset.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -163,16 +163,19 @@
  		font-weight: bolder;
  	}

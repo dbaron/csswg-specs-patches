@@ -6,9 +6,9 @@
 # Parent  03c075597a4cc54040d3913b648023d05d358dc4
 Make underline styling depend on support, use borders as fallback.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -301,27 +301,36 @@
  
  

@@ -6,9 +6,9 @@
 # Parent  483dfba48ee0700240b105609a7588c7d39db7ab
 Make inline notes less intrusive.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -423,17 +423,17 @@
  /******************************************************************************/
  

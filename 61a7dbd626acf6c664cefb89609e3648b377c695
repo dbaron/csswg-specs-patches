@@ -6,9 +6,9 @@
 # Parent  53fd86e7b171894cf57fbf41e39b58b44c3a025f
 [csswg] Remove span[id] rule. Add a few rules for making Prism-highlighted stuff display better.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -5,18 +5,16 @@
  
  	body {

@@ -6,9 +6,9 @@
 # Parent  6da4eaf705ade6f3b267ba1ed13ead1c982a7869
 Tweak 'at risk' style in default.css to be less confusing
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -830,26 +830,26 @@
  		 ul.toc li {text-indent: 5em hanging}
  	 The second line in case items wrap

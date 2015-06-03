@@ -6,9 +6,9 @@
 # Parent  a9ae99d72265c7e103ec615c1a6976d17f233584
 style sheet fixes...
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -309,16 +309,17 @@
  	/* We hyperlink a lot, so make it less intrusive */
  	a:link, a:visited {

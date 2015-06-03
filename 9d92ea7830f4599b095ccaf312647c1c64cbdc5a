@@ -6,9 +6,9 @@
 # Parent  5b67aa0b0003ce24db0a4cd2a335f460981efe29
 Fix default.css so that coloring of CSS works now that Tab's put the class directly on the <a> elements. (Probably, this should be assigned to a nested <code>. But for now, this fixes the lack of color.)
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -230,17 +230,17 @@
  	}
  	pre.idl :link, pre.idl :visited {

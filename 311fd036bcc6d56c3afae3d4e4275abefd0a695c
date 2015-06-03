@@ -6,9 +6,9 @@
 # Parent  00bf406922e754a26f3fdde3ea6803747d30111f
 [css-flexbox] Remove free-space-focused flex resolution algorithm, per WG resolution, in preparation for LC republication.
 
-diff --git a/default.css b/default.css
---- a/default.css
-+++ b/default.css
+diff --git a/default-TR.css b/default-TR.css
+--- a/default-TR.css
++++ b/default-TR.css
 @@ -65,20 +65,16 @@
  	p {
  		margin: 1em 0;
